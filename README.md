@@ -16,11 +16,15 @@
 ## The summary addresses the two questions and contains two additional queries or tables that may provide more insight. 
     * The first question we wanted to answer was how many people are retiring per title 
     and the image below shows the exact number per title. 
-    <img width="408" alt="retiring_titles" src="https://user-images.githubusercontent.com/110268006/198909285-ecbe8aab-65be-4621-ab3b-194f24408aa6.png">
+    
+    <img width="408" alt="retiring_titles" 
+    src="https://user-images.githubusercontent.com/110268006/198909285-ecbe8aab-65be-4621-ab3b-194f24408aa6.png">
 
     * The second question we wanted answered was who is eligible to participate in the mentorship 
     program and the mentorship ellligbility csv shows who is eligible and below is a snippet of a couple people who are eligible. 
-    <img width="914" alt="mentorship_eligibility" src="https://user-images.githubusercontent.com/110268006/198909345-010656f1-dcf9-4a79-aa91-b8d2813b6e85.png">
+    
+    <img width="914" alt="mentorship_eligibility" 
+    src="https://user-images.githubusercontent.com/110268006/198909345-010656f1-dcf9-4a79-aa91-b8d2813b6e85.png">
 
    ## Queries
     * One additional query is to look at salary and this query looks at the salaries and counts the 
