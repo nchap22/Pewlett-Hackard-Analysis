@@ -1,7 +1,5 @@
 # Pewlett-Hackard-Analysis
-
-# Overview of the analysis:
-
+## Overview of the analysis:
     The purpose is to determine the number of retiring employees per title, and identify 
     employees who are eligible to participate in the mentorship program. 
 # Results:
@@ -15,21 +13,26 @@
 # Summary:
 ## The summary addresses the two questions and contains two additional queries or tables that may provide more insight. 
     * The first question we wanted to answer was how many people are retiring per title 
-    and the image below shows the exact number per title. 
-    
-    <img width="408" alt="retiring_titles" 
-    src="https://user-images.githubusercontent.com/110268006/198909285-ecbe8aab-65be-4621-ab3b-194f24408aa6.png">
+    and the retirment titles csv shows this.
+   
+
 
     * The second question we wanted answered was who is eligible to participate in the mentorship 
-    program and the mentorship ellligbility csv shows who is eligible and below is a snippet of a couple people who are eligible. 
+    program and the mentorship ellligbility csv shows who is eligible.
     
-    <img width="914" alt="mentorship_eligibility" 
-    src="https://user-images.githubusercontent.com/110268006/198909345-010656f1-dcf9-4a79-aa91-b8d2813b6e85.png">
-
    ## Queries
     * One additional query is to look at salary and this query looks at the salaries and counts the 
     number of people with each salary:
+    
+    SELECT emp.emp_no, emp.first_name, emp.last_name, emp.birth_date, sal.salary
+    FROM employees as emp
+    Inner Join salary as sal
+    On (emp.emp_no = sal.emp_no)
+    WHERE (emp.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+    Order by emp.emp_no;
+    
     * However, this can be changed to run a query that has ranges, such as below 
     45,000, 45,000 to 55,000, etc. 
+    
     * Another additional query would be able to count all those eligible to retire in all the different
     departments instead of just looking at the different titles. 
